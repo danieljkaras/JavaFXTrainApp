@@ -23,19 +23,13 @@ public class MainApp extends Application {
 
         initRootLayout();
         showPersonOverview();
-//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-//        primaryStage.setTitle("Hello World");
-//        primaryStage.setScene(new Scene(root, 300, 275));
-//        primaryStage.show();
+
     }
 
     public void initRootLayout() {
         try {
 
             Parent root = FXMLLoader.load(getClass().getResource("view/RootLayout.fxml")) ;
-//            FXMLLoader loader = new FXMLLoader();
-//            loader.setLocation(MainApp.class.getResource("RootLayout.fxml"));
-//            rootLayout = (BorderPane) root.;
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
@@ -49,11 +43,6 @@ public class MainApp extends Application {
         try {
             Parent root = FXMLLoader.load((getClass().getResource("view/PersonOverview.fxml")));
 
-//            FXMLLoader loader = new FXMLLoader();
-//            loader.setLocation(MainApp.class.getResource(""));
-//            AnchorPane personOverview = (AnchorPane) loader.load();
-
-//            rootLayout.setCenter(personOverview);
         } catch (IOException e) {
             e.printStackTrace();
         }
